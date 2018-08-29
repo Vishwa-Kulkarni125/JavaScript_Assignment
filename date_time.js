@@ -2,9 +2,11 @@
 <body>
 
 <h2>To display current time and date</h2>
-<p id="demo">Time and Date</p>
+<p id="demo">Time and Date: </p>
 
-<button type="button" onclick=document.getElementById("demo").innerHTML=Date()>Click Here!</button>
+<script>
+document.getElementById("demo").innerHTML+=Date()
+</script>
 
 </body>
 </html>
