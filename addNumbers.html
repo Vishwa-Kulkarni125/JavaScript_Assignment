@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title> AddNumbers </title>
+</head>
+<body>
+    
+    <label for="num1">Enter first number: </label>
+    <input type="text" id="num1">
+    
+    <label for="num2">Enter second number:</label>
+    <input type="text" id="num2">
+    
+    <button onclick="add()">ADD</button>
+    
+    <script>
+        
+        function add(){
+            var x = document.getElementById("num1").value;
+            var y = document.getElementById("num2").value;
+            console.log(Number(x));
+            console.log(Number(y));
+            
+            if(isNaN(Number(x)) || isNaN(Number(y))){
+                console.log("Sorry.... Only Nos will be added");
+           }
+           else
+            {
+                 console.log(+x + +y);
+            }
+        }    
+    </script>
+</body>
+</html>
